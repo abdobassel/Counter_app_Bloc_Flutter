@@ -1,9 +1,12 @@
+import 'package:bloc_counter/bloc/bloc_oserver.dart';
 import 'package:bloc_counter/bloc/cubit.dart';
 import 'package:bloc_counter/bloc/states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
+  Bloc.observer = MyBlocObserver();
+
   runApp(const MyApp());
 }
 
